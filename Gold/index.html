@@ -1,0 +1,163 @@
+<!doctype html>
+//Dylan Romeo Wahlstrom
+//1211
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>Got Ink?</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>
+    <div data-role="page" id="home">
+        
+        <div data-role="header" data-position="fixed" data-theme="a">
+            <h1>Got Ink?</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home" data-theme="a" class="ui-btn-active ui-state-persist">Home</a></li>
+                    <li><a href="additem.html" data-icon="plus" data-theme="a">Add Client</a></li>
+                    <li><a href="#info" data-icon="info" data-theme="a">Information</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        
+        
+        <div data-role="content">
+            
+            <div data-role="collapsible" data-collapsed="true" data-theme="a">
+                <h3>Browse By</h3>
+                <ul data-role="listview" data-filter="true">
+                <li>
+                    <a href="#error">
+                        Style
+                    </a>
+                </li>
+                <li>
+                    <a href="#error">
+                        First Name
+                    </a>
+                </li>
+                <li>
+                    <a href="#error">
+                        Last Name
+                    </a>
+                </li>
+                <li>
+                    <a href="#error">
+                        Email
+                    </a>
+                </li>
+                <li>
+                    <a href="#error">
+                        Date
+                    </a>
+                </li>
+            </ul>
+        </div>
+            </div>
+        <p><img src=images/calltoaction.png></p>
+            
+                
+        
+        <div data-role="footer" data-position="fixed" data-theme="c">
+            <h4>Organize Your Appointments Today!</h4>
+            
+        </div>
+        
+    </div>
+     <div data-role="page" id="info" data-add-back-btn="true" >
+        
+        <div data-role="header" data-position="fixed" data-theme="a">
+            <h1>Got Ink?</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home" data-theme="a">Home</a></li>
+                    <li><a href="additem.html" data-icon="plus" data-theme="a">Add Client</a></li>
+                    <li><a href="#info" data-icon="info" data-theme="a" class="ui-btn-active ui-state-persist">Information</a></li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+        
+        <div data-role="content">
+            <ul data-role="listview" data-theme="e">
+                <li><a href="index.html">Gold App</a></li>
+                <li><a href="/Users/dylanwahlstrom/Desktop/MiU/Bronze/index.html">Bronze App</a></li>
+            </ul>
+        </div>
+        <div data-role="collapsible" data-collapsed="true" data-theme="c">
+                <h3>About</h3>
+                <ul data-role="listview">
+            <li>Creater: Dylan Wahlstrom</li>
+            <li>Tattoo Appointment Application</li>
+            <li>MiU</li>
+            </ul>
+            </div>
+        
+            
+            
+        </div>
+        
+        <div data-role="footer" data-position="fixed" data-theme="c">
+            <h4>Organize Your Appointments Today!</h4>
+            
+        </div>
+        
+    </div>
+     
+    <div data-role="page" id="error" data-add-back-btn="true" >
+        
+        <div data-role="header" data-position="fixed" data-theme="a">
+            <h1>Got Ink?</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home" data-theme="a">Home</a></li>
+                    <li><a href="additem.html" data-icon="plus" data-theme="a">Add Client</a></li>
+                    <li><a href="#info" data-icon="info" data-theme="a">Information</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        
+        <div data-role="content">
+            
+            <h3>You have navigated to a page that currently does not exist!</h3>
+            
+        </div>
+        
+        <div data-role="footer" data-position="fixed" data-theme="c">
+            <h4>Organize Your Appointments Today!</h4>
+            
+        </div>
+        
+    </div>
+    
+
+	<!-- JavaScript under here -->
+        
+        <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+        <script typle="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="keywords" content="tattoo, appointment, ink, easy, application"/>
+    <meta name="description" content="an application for clients of tattoo artists to make appointments"/>
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" type="text/css" 
+      href="css/form.css" media="only screen and (max-width: 480px)" />
+    
+    <title>Got Ink?</title>
+</head>
+<body bgcolor="#d1d1d1">
+    <a href=index.html>
+	<img src="images/header.jpg?1351216228" width="320" height="121" alt=""></a>
+	<br>
+	<br>
+	<br>
+	<br>    
+	    <a href="#" id="clearData">Clear Stored Data</a>
+	    <a href="#" id="displayData">Display Data</a>
+	    <a href="additem.html" id="addNew" style="display:none;">Add New Item</a>
+	
+	<form action="#" method="post" id="itemForm">
+	    
+		<feildset>
+			<h4><ledgend>Your Information</ledgend></h4>
+			<span>* fields are required.</span>
+			<ul id="errors"></ul>
+			<ul>
+			    <li id="dropDown"><label for="style">*Add To Group:</label></li><br>
+				<li><label for="fname">*First Name:</lable><input type="text" id="fname" /></li><br>
+				<li><label for="lname">*Last Name:</lable><input type="text" id="lname" /></li><br>
+				<li><label for="email">*Email:</lable><input type="email" id="email" placeholder="Enter your email address" /></li><br>
+				<li><input type="radio" name="sex" value="male" /><label for="sex">Male</label></li><br>
+				<li><input type="radio" name="sex" value="female" /><label for="sex">Female</label></li><br>
+				<input type="hidden" name="Language" value="English">
+			</ul>
+		</feildset>
+		<feildset>
+			<h4><ledgend>Tattoo Information</ledgend></h4>
+			<ul>
+				<li><label for="url">Website for desired artwork:</lable><input type="url" id="url" placeholder="If unavailable N/A" /></li><br>
+				<li><label for="date">*Desired date:</label><input type="datetime" id="date" placeholder="mm/dd/yy" /></li><br>
+				<li><lable for="pain">Pain Tolerance</label><input type="range" id="pain" min="1" max="10" /></li><br>
+				<li><label for="comments">Comments:</label><input type="text" id="comment" /></li><br>
+			</ul>
+			<ul id="errors"></ul>
+		</feildset>
+			<p><input type="submit" value="Submit" id="saveData" /><br>
+		</form>
+		<script type="text/javascript" src="js/json.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
